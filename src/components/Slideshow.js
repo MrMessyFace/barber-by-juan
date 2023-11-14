@@ -1,55 +1,32 @@
-import React from "react";
-
-const colors = ["../assets/images/image-01.jpg", "../assets/images/image-02.jpg", "../assets/images/image-03.jpg"];
-const delay = 2500;
+import React, { useState, useEffect } from "react";
+import img01 from "../assets/images/image-01.jpg";
+import img02 from "../assets/images/image-02.jpg";
+import img03 from "../assets/images/image-03.jpg";
 
 const Slideshow = () => {
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
+  // Define an array of image sources
+  const images = [
+    img01,
+    img02,
+    img03,
+  ];
 
-  const resetTimeout = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  React.useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
+  useEffect(() => {
+    // Set up an interval to cycle through images
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change the interval time as needed (in milliseconds)
 
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {colors.map((backgroundColor, index) => (
-          <div className="slide" key={index} style={{ backgroundColor }}></div>
-        ))}
-      </div>
-
-      <div className="slideshowDots">
-        {colors.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
-        ))}
-      </div>
+      {/* Display the current image */}
+      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
     </div>
   );
 };
