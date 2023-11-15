@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BookNow from "../components/BookNow";
 
 const Navbar = () => {
   return (
@@ -19,7 +20,16 @@ const Navbar = () => {
         <Link to="/about">About</Link>
         <Link to="/services">Services</Link>
         <Link to="/gallery">Gallery</Link>
-        <Link to="/contact">Contact</Link>
+        <div>
+          <BookNow />
+        </div>
+        <a
+        href="https://www.instagram.com/gallegosjuanj"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa-brands fa-instagram fa-2xl"></i>
+      </a>
       </nav>
     </nav>
   );

@@ -6,7 +6,6 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import GalleryPage from "./pages/GalleryPage";
-import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/services" component={ServicesPage} />
           <Route path="/gallery" component={GalleryPage} />
-          <Route path="/contact" component={ContactPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </Layout>

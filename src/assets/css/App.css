@@ -54,6 +54,35 @@ body {
   color: #334559;
 }
 
+.book-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #334559;
+  border: 5px solid white;
+  border-radius: 20px;
+  width: 250px;
+  height: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.book-now a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.book-now:hover {
+  background-color: white;
+  border: 5px solid #334559;
+}
+
+.book-now:hover a {
+  color: #c1473a;
+}
+
 .home {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -89,12 +118,13 @@ body {
 }
 
 .location-section,
-.book-section,
 .hours-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .location,
@@ -119,30 +149,10 @@ body {
   border: 5px solid #c1473a;
 }
 
-.book-now {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #c1473a;
-  border: 5px solid white;
-  border-radius: 20px;
-  width: 250px;
-  height: 80px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.book-now a {
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .about-page,
 .services-page,
 .gallery-page,
-.contact-page {
+.not-found-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,7 +198,7 @@ body {
 .about-page h1,
 .services h1,
 .gallery-page h1,
-.contact-page h1 {
+.not-found-page h1 {
   font-size: 60px;
   -webkit-text-stroke: 2.5px #c1473a;
 }
@@ -200,41 +210,27 @@ body {
 .gallery {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .gallery-image {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 30px;
-  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
   border: 5px solid white;
 }
 
 .gallery-image img {
-  max-width: 400px;
+  max-height: 300px;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.contact-info a {
-  font-size: 40px;
-  color: #c1473a;
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-
-.contact-info a:hover {
-  color: white;
+.not-found-page img {
+  max-height: 500px;
+  border: 5px solid white;
+  margin: 20px;
 }
 
 .footer {
@@ -259,4 +255,11 @@ body {
 .designer a {
   color: white;
   text-decoration: none;
+}
+
+/* Base styles for larger screens */
+
+/* Media query for screens 768 pixels and below (typical tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller screens go here */
 }
