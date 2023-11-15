@@ -141,8 +141,8 @@ body {
 .hours-image img {
   max-height: 300px;
   border-radius: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .map img {
@@ -257,9 +257,55 @@ body {
   text-decoration: none;
 }
 
-/* Base styles for larger screens */
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
-/* Media query for screens 768 pixels and below (typical tablets and mobiles) */
-@media only screen and (max-width: 768px) {
-  /* Styles for smaller screens go here */
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+
+  header {
+    background: rgb(21, 160, 160);
+  }
+
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+
+  header {
+    background: purple;
+  }
 }
