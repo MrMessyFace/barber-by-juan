@@ -4,6 +4,7 @@ import Slideshow from "../components/Slideshow";
 import LocationInfo from "../components/LocationInfo";
 import Map from "../components/Map";
 import HoursImg from "../components/HoursImg";
+import BookNow from "../components/BookNow";
 import HoursInfo from "../components/HoursInfo";
 
 const HomePage = () => {
@@ -17,6 +18,9 @@ const HomePage = () => {
         <div className="location-section">
           <LocationInfo />
           <Map />
+        </div>
+        <div className="book-section">
+          <BookNow />
         </div>
         <div className="hours-section">
           <HoursImg />

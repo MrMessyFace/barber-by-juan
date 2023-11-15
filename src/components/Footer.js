@@ -4,9 +4,19 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="copyright">
-        &copy; 2023 Juan Gallegos. All Rights Reserved.
+        <p>&copy; 2023 Juan Gallegos. All Rights Reserved.</p>
       </div>
-      <div className="designer">Website Design by Jessie S. Galindo.</div>
+      <div className="designer">
+        <p>
+          <a
+            href="https://www.jessiesgalindo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website Design by Jessie S. Galindo.
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
