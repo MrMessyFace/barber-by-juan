@@ -64,8 +64,8 @@ body {
   border-radius: 20px;
   width: 250px;
   height: 80px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .book-now a {
@@ -226,6 +226,8 @@ body {
   align-items: center;
   margin: 30px;
   border: 5px solid white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .gallery-image img {
@@ -235,6 +237,8 @@ body {
 .not-found-page img {
   max-height: 500px;
   border: 5px solid white;
+  border-radius: 10px;
+  overflow: hidden;
   margin: 20px;
 }
 
@@ -262,6 +266,7 @@ body {
   text-decoration: none;
 }
 
+/* Large smartphones */
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -323,7 +328,7 @@ body {
     background-color: #334559;
     border: 3px solid white;
   }
-  
+
   .book-now:hover a {
     color: white;
   }
@@ -331,7 +336,7 @@ body {
   .logo img {
     width: 100%;
     margin-left: 20px;
-    margin-right: 2cap;
+    margin-right: 20px;
   }
 
   .slideshow {
@@ -374,7 +379,16 @@ body {
   .hours-image img,
   .juan img,
   .not-found-page img {
-    width: 100%; /* Make images fill their container */
+    width: 300px; /* Make images fill their container */
+  }
+
+  .map img,
+  .juan img {
+    border-radius: 50%;
+    border: 5px solid #c1473a;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 
   .about-page h1,
@@ -400,15 +414,6 @@ body {
     margin-top: 10px;
   }
 
-  .juan img {
-    width: 300px;
-    border-radius: 50%;
-    border: 5px solid #c1473a;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-
   .bio {
     display: flex;
     justify-content: center;
@@ -421,6 +426,10 @@ body {
 
   .gallery-image {
     margin: 10px;
+  }
+
+  .not-found-page {
+    text-align: center;
   }
 
   .footer {
