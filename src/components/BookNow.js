@@ -9,7 +9,7 @@ const BookNow = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-solid fa-calendar-check fa-lg"></i> BOOK NOW
+          <i className="fa-solid fa-calendar-check fa-lg"></i> BOOK NOW
         </a>
       </p>
     </div>
