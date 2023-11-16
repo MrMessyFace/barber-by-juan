@@ -7,7 +7,6 @@ const GalleryPage = () => {
     <div className="gallery-page">
       <h1>GALLERY</h1>
       <Gallery />
-      <br></br>
       <VideoPlayer />
     </div>
   );

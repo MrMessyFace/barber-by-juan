@@ -229,7 +229,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   border: 5px solid white;
   border-radius: 10px;
   overflow: hidden;
@@ -237,6 +239,23 @@ body {
 
 .gallery-image img {
   max-height: 300px;
+}
+
+.video-player {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player video {
+  border: 5px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .not-found-page img {
@@ -271,11 +290,10 @@ body {
   text-decoration: none;
 }
 
-/* Large smartphones */
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
-    flex-direction: column; /* Change to a vertical layout for smaller screens */
+    flex-direction: column;
     align-items: center;
     background-color: #c1473a;
     border-bottom: 5px solid white;
@@ -285,25 +303,25 @@ body {
 
   .navbar-image {
     margin-left: 0px;
-    margin-bottom: 10px; /* Adjust spacing */
+    margin-bottom: 10px;
   }
 
   .navbar-image img {
-    max-height: 150px; /* Adjust the max height */
+    max-height: 150px;
   }
 
   .navbar-right {
     display: flex;
-    flex-direction: column; /* Change to a vertical layout for smaller screens */
+    flex-direction: column;
     align-items: center;
-    font-size: 20px; /* Adjust font size */
-    margin-top: 10px; /* Adjust spacing */
+    font-size: 20px;
+    margin-top: 10px;
     margin-left: 0px;
     margin-right: 0px;
   }
 
   .navbar-right a {
-    margin: 5px; /* Adjust spacing */
+    margin: 5px;
   }
 
   .navbar-right a:hover {
@@ -349,8 +367,9 @@ body {
   .hours-section,
   .about-section,
   .gallery,
-  .gallery-image {
-    flex-direction: column; /* Change to a vertical layout for smaller screens */
+  .gallery-image,
+  .video-player {
+    flex-direction: column;
   }
 
   .slideshow,
@@ -361,7 +380,7 @@ body {
   }
 
   .location {
-    font-size: 15px; /* Adjust font size */
+    font-size: 15px;
     margin-bottom: 20px;
   }
   .hours {
@@ -372,7 +391,7 @@ body {
   .hours-image img,
   .juan img,
   .not-found-page img {
-    width: 300px; /* Make images fill their container */
+    width: 300px;
   }
 
   .map img,
@@ -388,8 +407,8 @@ body {
   .services h1,
   .gallery-page h1,
   .not-found-page h1 {
-    font-size: 40px; /* Adjust font size */
-    -webkit-text-stroke: 2px #c1473a; /* Adjust text stroke size */
+    font-size: 40px;
+    -webkit-text-stroke: 2px #c1473a;
   }
 
   .about-page {
@@ -401,7 +420,7 @@ body {
 
   .about-section {
     display: flex;
-    flex-direction: column; /* Change to a vertical layout for smaller screens */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -417,8 +436,23 @@ body {
     margin-right: 20px;
   }
 
+  .gallery {
+    margin-top: 10px;
+  }
+
   .gallery-image {
-    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .video-player div {
+    margin-bottom: 10px;
+  }
+
+  .video-player video {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .not-found-page {
@@ -426,6 +460,6 @@ body {
   }
 
   .footer {
-    flex-direction: column; /* Change to a vertical layout for smaller screens */
+    flex-direction: column;
   }
 }

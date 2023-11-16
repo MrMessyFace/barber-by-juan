@@ -1,31 +1,18 @@
-import React, { useState, useRef } from "react";
+import React from "react";
+import ReactPlayer from "react-player";
+
+import myVideo1 from "../assets/videos/video-01.mp4";
+import myVideo2 from "../assets/videos/video-02.mp4";
+import myVideo3 from "../assets/videos/video-03.mp4";
+import myVideo4 from "../assets/videos/video-04.mp4";
 
 const VideoPlayer = () => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const videoFiles = ["video-01.mp4", "video-02.mp4", "video-03.mp4"]; // Add your video file names
-  const videoRef = useRef(null);
-
-  const playNextVideo = () => {
-    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoFiles.length);
-  };
-
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <video
-        ref={videoRef}
-        controls
-        width="300"
-        height="400"
-        onEnded={playNextVideo} // Play the next video when the current one ends
-      >
-        <source
-          src={`..assets/videos/${videoFiles[currentVideoIndex]}`}
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+    <div className="video-player">
+      <div><ReactPlayer url={myVideo1} width="auto" height="500px" controls={true} /></div>
+      <div><ReactPlayer url={myVideo2} width="auto" height="500px" controls={true} /></div>
+      <div><ReactPlayer url={myVideo3} width="auto" height="500px" controls={true} /></div>
+      <div><ReactPlayer url={myVideo4} width="auto" height="500px" controls={true} /></div>
     </div>
   );
 };
