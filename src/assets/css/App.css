@@ -129,7 +129,7 @@ body {
 .hours-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 20px;
   font-weight: bold;
@@ -149,6 +149,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
 }
 
 .map img,
@@ -350,6 +353,14 @@ body {
   .hours-section {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .location-info,
+  .map,
+  .business-hours,
+  .hours-info {
+    width: 100%;
+    padding: 0px;
   }
 
   .location-info,
