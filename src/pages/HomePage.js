@@ -3,23 +3,21 @@ import Logo from "../components/Logo";
 import Slideshow from "../components/Slideshow";
 import LocationInfo from "../components/LocationInfo";
 import Map from "../components/Map";
-import HoursImg from "../components/HoursImg";
+import BusinessHours from "../components/BusinessHours";
 import HoursInfo from "../components/HoursInfo";
 
 const HomePage = () => {
   return (
-    <div className="home">
+    <div className="home-page">
       <Logo />
-      <br></br>
       <Slideshow />
-      <br></br>
-      <div className="information">
+      <div className="information-section">
         <div className="location-section">
           <LocationInfo />
           <Map />
         </div>
         <div className="hours-section">
-          <HoursImg />
+          <BusinessHours />
           <HoursInfo />
         </div>
       </div>

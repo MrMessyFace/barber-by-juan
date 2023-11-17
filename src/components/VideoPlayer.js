@@ -8,7 +8,7 @@ import myVideo4 from "../assets/videos/video-04.mp4";
 
 const VideoPlayer = () => {
   return (
-    <div className="video-player">
+    <div className="video-player-section">
       <div><ReactPlayer url={myVideo1} width="auto" height="500px" controls={true} /></div>
       <div><ReactPlayer url={myVideo2} width="auto" height="500px" controls={true} /></div>
       <div><ReactPlayer url={myVideo3} width="auto" height="500px" controls={true} /></div>

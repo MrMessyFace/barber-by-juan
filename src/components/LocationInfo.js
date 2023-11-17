@@ -2,7 +2,7 @@ import React from "react";
 
 const LocationInfo = () => {
   return (
-    <div className="location">
+    <div className="location-info">
       <p>LOCATION</p>
       <p>7602 N. Jupiter Rd Ste 111</p>
       <p>Garland, TX 75044</p>

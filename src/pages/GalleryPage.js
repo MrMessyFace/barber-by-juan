@@ -5,8 +5,9 @@ import VideoPlayer from "../components/VideoPlayer";
 const GalleryPage = () => {
   return (
     <div className="gallery-page">
-      <h1>GALLERY</h1>
+      <h1>PHOTO GALLERY</h1>
       <Gallery />
+      <h1>VIDEO GALLERY</h1>
       <VideoPlayer />
     </div>
   );

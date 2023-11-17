@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutBio = () => {
   return (
-    <div className="bio">
+    <div className="about-bio">
       <p>
         My name is Juan. I moved from Nebraska to Texas with the dream of
         opening a new barbershop in a new state after having my own back in

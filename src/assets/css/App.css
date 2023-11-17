@@ -84,7 +84,11 @@ body {
   color: #c1473a;
 }
 
-.home {
+.home-page,
+.about-page,
+.services-page,
+.gallery-page,
+.not-found-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,6 +105,7 @@ body {
 
 .logo img {
   max-height: 250px;
+  margin-bottom: 20px;
 }
 
 .slideshow {
@@ -110,6 +115,7 @@ body {
   width: 75%;
   border: 5px solid white;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .slideshow img {
@@ -118,7 +124,9 @@ body {
   object-fit: cover;
 }
 
-.information {
+.information-section,
+.location-section,
+.hours-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -129,18 +137,14 @@ body {
 
 .location-section,
 .hours-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-.location,
+.location-info,
 .map,
-.hours-image,
-.hours {
+.business-hours,
+.hours-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,7 +152,7 @@ body {
 }
 
 .map img,
-.hours-image img {
+.business-hours img {
   max-height: 300px;
   border-radius: 50%;
   margin-left: 20px;
@@ -159,15 +163,12 @@ body {
   border: 5px solid #c1473a;
 }
 
-.about-page,
-.services-page,
-.gallery-page,
-.not-found-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.about-page h1,
+.services-page h1,
+.gallery-page h1,
+.not-found-page h1 {
+  font-size: 60px;
+  -webkit-text-stroke: 2.5px #c1473a;
   margin-bottom: 20px;
 }
 
@@ -187,7 +188,7 @@ body {
   margin-right: 50px;
 }
 
-.bio {
+.about-bio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +198,7 @@ body {
   margin-right: 200px;
 }
 
-.services {
+.services-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,27 +206,21 @@ body {
   font-weight: bold;
 }
 
-.about-page h1,
-.services h1,
-.gallery-page h1,
-.not-found-page h1 {
-  font-size: 60px;
-  -webkit-text-stroke: 2.5px #c1473a;
-}
-
-.services p {
+.services-section p {
   font-size: 20px;
 }
 
-.gallery {
+.gallery-section,
+.video-player-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-.gallery-image {
+.gallery-photo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,25 +232,16 @@ body {
   overflow: hidden;
 }
 
-.gallery-image img {
+.gallery-photo img {
   max-height: 300px;
 }
 
-.video-player {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-player video {
+.video-player-section video {
   border: 5px solid white;
   border-radius: 10px;
   overflow: hidden;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 .not-found-page img {
@@ -279,25 +265,20 @@ body {
   width: 100%;
 }
 
-.copyright,
-.designer {
+.copyright-section,
+.web-designer-section {
   display: flex;
   align-items: center;
 }
 
-.designer a {
+.web-designer-section a {
   color: white;
   text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #c1473a;
-    border-bottom: 5px solid white;
-    width: 100%;
     padding-bottom: 10px;
   }
 
@@ -311,11 +292,9 @@ body {
   }
 
   .navbar-right {
-    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 20px;
-    margin-top: 10px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -329,22 +308,17 @@ body {
   }
 
   .book-now {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #334559;
     border: 3px solid white;
-    border-radius: 20px;
     width: 170px;
     height: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .book-now a {
-    color: white;
-    text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
   }
 
   .book-now:hover {
@@ -362,33 +336,30 @@ body {
     margin-right: 20px;
   }
 
-  .information,
+  .information-section,
   .location-section,
   .hours-section,
   .about-section,
-  .gallery,
-  .gallery-image,
-  .video-player {
+  .gallery-section,
+  .gallery-photo,
+  .video-player-section {
     flex-direction: column;
   }
 
-  .slideshow,
   .location-section,
   .hours-section {
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .location {
+  .location-info,
+  .hours-info {
     font-size: 15px;
     margin-bottom: 20px;
   }
-  .hours {
-    font-size: 15px;
-  }
 
   .map img,
-  .hours-image img,
+  .business-hours img,
   .juan img,
   .not-found-page img {
     width: 300px;
@@ -404,18 +375,11 @@ body {
   }
 
   .about-page h1,
-  .services h1,
+  .services-page h1,
   .gallery-page h1,
   .not-found-page h1 {
     font-size: 40px;
     -webkit-text-stroke: 2px #c1473a;
-  }
-
-  .about-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .about-section {
@@ -426,31 +390,24 @@ body {
     margin-top: 10px;
   }
 
-  .bio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .about-bio {
     text-align: center;
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .gallery {
-    margin-top: 10px;
-  }
-
-  .gallery-image {
+  .gallery-photo {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 10px;
   }
 
-  .video-player div {
+  .video-player-section div {
     margin-bottom: 10px;
   }
 
-  .video-player video {
+  .video-player-section video {
     margin-left: 0px;
     margin-right: 0px;
   }

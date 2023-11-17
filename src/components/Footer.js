@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="copyright">
+      <div className="copyright-section">
         <p>&copy; 2023 Juan Gallegos. All Rights Reserved.</p>
       </div>
-      <div className="designer">
+      <div className="web-designer-section">
         <p>
           <a
             href="https://www.jessiesgalindo.com/"

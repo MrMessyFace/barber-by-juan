@@ -2,9 +2,7 @@ import React from "react";
 
 const ServiceList = () => {
   return (
-    <div className="services">
-      <h1>SERVICES</h1>
-      <br></br>
+    <div className="services-section">
       <p>Regular Cuts: $30</p>
       <br></br>
       <p>Boys' Cuts: $25</p>

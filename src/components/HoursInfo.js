@@ -2,7 +2,7 @@ import React from "react";
 
 const HoursInfo = () => {
   return (
-    <div className="hours">
+    <div className="hours-info">
       <p>MONDAY - FRIDAY</p>
       <p>10:00am - 8:00pm</p>
       <br></br>

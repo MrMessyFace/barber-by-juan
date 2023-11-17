@@ -1,11 +1,11 @@
 import React from "react";
 
-const HoursImg = () => {
+const BusinessHours = () => {
   return (
-    <div className="hours-image">
+    <div className="business-hours">
       <img src={require("../assets/images/business-hours.png")} alt="hours" />
     </div>
   );
 };
 
-export default HoursImg;
+export default BusinessHours;
