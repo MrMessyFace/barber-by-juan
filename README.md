@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Barber by Juan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+I created a website for the Barber by Juan Barber Shop, a business located in Garland, Texas, in React. It has a home page with the shop's main logo, a slideshow containing gallery images, the location and phone number, a map of the gps location, and the hours of operation, an about page, a services page, and a gallery page. The navbar has working links to each page, a book now button that takes you to their booking app account, and a link to their Instagram page. In the footer, there is a link to my portfolio. Additionally, I used basic CSS, Font Awesome icons, and the React-Player npm package.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+No installation necessary but you can clone the [repository](https://github.com/MrMessyFace/barber-by-juan) from GitHub to edit and make your own version.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+When a user loads the page, they are able to see a working navbar that has a logo as the home button, links to each page, a book now button for booking appointments, and a link to their Instagram page. Below the navbar is the main logo, a slideshow containing gallery images, the address and phone numbers, an image containing the gps map, and the hours of operation. On the about page, there is a picture of the owner and his personal bio. On the services page, there is a list of the services they provide. On the gallery page, there is a section for photos and a section for videos. Then there is a footer with the owner's copyright and my signature containing a link to my portfolio page.
 
-### `npm test`
+![Screenshot](./src/assets/images/home-page-screenshot.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot](./src/assets/images/about-page-screenshot.png)
 
-### `npm run build`
+![Screenshot](./src/assets/images/services-page-screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot](./src/assets/images/gallery-page-screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credits
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Code was inspired by a multitude of randomly found barbershop websites but was created from scratch by [Jessie Galindo](https://github.com/MrMessyFace) with colors, logos, images, and videos provided by Juan Gallegos.
 
-### `npm run eject`
+## Helpful Links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Repository](https://github.com/MrMessyFace/barber-by-juan)
+- [Live App](https://www.barberbyjuan.com/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+&copy; 2023 Jessie S. Galindo. All Rights Reserved.
