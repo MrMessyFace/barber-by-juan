@@ -3,20 +3,68 @@ import React from "react";
 const Gallery = () => {
   return (
     <div className="gallery-section">
-      <div className="gallery-photo">
-        <img src={require("../assets/images/gallery-image-01.jpg")} alt="barbershop" />
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-01.jpg")}
+            alt="barbershop"
+          />
+        </div>
+        <p className="invisible">Image 1</p>
       </div>
-      <div className="gallery-photo">
-        <img src={require("../assets/images/gallery-image-02.jpg")} alt="haircut" />
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-02.jpg")}
+            alt="haircut"
+          />
+        </div>
+        <p className="invisible">Image 2</p>
       </div>
-      <div className="gallery-photo">
-        <img src={require("../assets/images/gallery-image-03.jpg")} alt="haircut" />
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-03.jpg")}
+            alt="haircut"
+          />
+        </div>
+        <p className="invisible">Image 3</p>
       </div>
-      <div className="gallery-photo">
-        <img src={require("../assets/images/gallery-image-04.jpg")} alt="haircut" />
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-04.jpg")}
+            alt="haircut"
+          />
+        </div>
+        <p className="invisible">Image 4</p>
       </div>
-      <div className="gallery-photo">
-        <img src={require("../assets/images/gallery-image-05.jpg")} alt="haircut" />
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-05.jpg")}
+            alt="haircut"
+          />
+        </div>
+        <p className="invisible">Image 5</p>
+      </div>
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-06.jpg")}
+            alt="haircut"
+          />
+        </div>
+        <p>Before a Perm</p>
+      </div>
+      <div className="gallery-caption">
+        <div className="gallery-photo">
+          <img
+            src={require("../assets/images/gallery-image-07.jpg")}
+            alt="haircut"
+          />
+        </div>
+        <p>After a Perm</p>
       </div>
     </div>
   );
