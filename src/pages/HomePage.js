@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../components/Logo";
+import Headline from "../components/Headline";
 import Slideshow from "../components/Slideshow";
 import LocationInfo from "../components/LocationInfo";
 import Map from "../components/Map";
@@ -10,6 +11,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <Logo />
+      <Headline />
       <Slideshow />
       <div className="information-section">
         <div className="location-section">
