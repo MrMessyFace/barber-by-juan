@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="copyright-section">
-        <p>&copy; 2023 Juan Gallegos. All Rights Reserved.</p>
+        <p>&copy; 2023-2025 Juan Gallegos. All Rights Reserved.</p>
       </div>
       <div className="web-designer-section">
         <p>
