@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <Logo />
-      <Headline />
+      {/* <Headline /> */}
       <Slideshow />
       <div className="information-section">
         <div className="location-section">
