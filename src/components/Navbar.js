@@ -24,12 +24,12 @@ const Navbar = () => {
           <BookNow />
         </div>
         <a
-        href="https://www.instagram.com/gallegosjuanj"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fa-brands fa-instagram fa-2xl"></i>
-      </a>
+          href="https://www.instagram.com/gallegosjuanj"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-instagram fa-2xl"></i>
+        </a>
       </nav>
     </nav>
   );
